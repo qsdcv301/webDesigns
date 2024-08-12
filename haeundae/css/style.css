@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #d2e0e7;
+    height: 650px;
+    width: 215px;
+    padding-top: 20px;
+}
+
+.container {
+    margin-left: 215px;
+    width: 800px;
+    border: 1px solid #ddd;
+}
+
+ul.gnb,
+ul.lnb {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.gnb {
+    margin-top: 50px;
+}
+
+ul.gnb>li>a {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul.gnb>li {
+    transition: all 300ms;
+    border-bottom: 1px dashed #fff;
+}
+
+ul.gnb>li:hover {
+    background: #058ccf;
+}
+
+ul.gnb>li:hover a {
+    color: #fff;
+}
+
+ul.lnb {
+    display: none;
+}
+
+ul.lnb>li>a {
+    display: block;
+    padding: 10px 30px;
+}
+
+ul.lnb>li {
+    transition: all 300ms;
+}
+
+ul.lnb>li:hover {
+    background: #d2e0e7;
+}
+
+ul.lnb>li:hover>a {
+    font-weight: bold;
+    color: #058ccf;
+}
+
+.hero {
+    height: 350px;
+}
+
+.main {
+    height: 200px;
+    display: flex;
+}
+
+footer {
+    height: 100px;
+}
+
+.quick {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 5px 5px 15px 15px;
+}
+
+.sns {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background-image: url("");
+    background-repeat: no-repeat;
+}
+
+.band{
+
+}
+
+.facebook{
+
+}
+.instagram{
+
+}

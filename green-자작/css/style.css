@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: #333333;
+}
+
+.container{
+    width: 1200px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+a{
+    color: #333333;
+}
+
+/* header start*/
+
+header .logo {
+    height: 100px;
+}
+
+/* header end */
+
+/* slide start */
+
+.slide{
+    border: 3px solid #3cb149;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideIn{
+    width: 3600px;
+    position: absolute;
+}
+
+.slideBox {
+    width: 1200px;
+    height: 300px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.slideBox img {
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.slideText{
+    padding: 30px;
+    background: rgba(60, 177, 73, 0.5);
+    width: 410px;
+    margin-left: 100px;
+    margin-top: 120px;
+    border-radius: 10px;
+}
+
+.slideBox .slideText h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.slideBox .slideText p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* slide end */
+
+/* content start */
+
+.content{
+    height: 200px;
+}
+
+/* content notice start */
+
+.noticeTitle{
+    border: 1px solid #3cb149;
+    border-bottom: none;
+    height: 35px;
+    width: 80px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.noticeTitle a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noticeText{
+    border: 1px solid #3cb149;
+    font-size: 12px;
+    height: 165px;
+}
+
+.noticeMsg p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.noticeMsg p:last-of-type{
+    font-size: 10px;
+}
+
+/* content notice end */
+
+/* content gallery start */
+
+.galleryTitle{
+    border: 1px solid #3cb149;
+    border-bottom: none;
+    height: 35px;
+    width: 70px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.galleryTitle a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleryImg{
+    border: 1px solid #3cb149;
+    height: 165px;
+}
+
+.galleryImg img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+/* content gallery end */
+
+/* content banner start */
+
+
+
+/* content banner end */
+
+/* content end */
+
+/* footer start */
+footer{
+    height: 100px;
+    background: #3cb149;
+}
+
+.footer{
+    height: 100%;
+}
+
+.footer .col-2>img{
+    height: 30px;
+    filter: grayscale(1);
+}
+
+.footerText{
+    text-align: center;
+}
+
+.footerText p{
+    font-size: 13px;
+    margin: 0;
+}
+
+.footerSite a{
+    font-size: 18px;
+    font-weight: 600;
+}
+.footerSite img{
+    margin-right: 15px;
+}
+/* footer end */
