@@ -23,8 +23,7 @@ header {
 
 .container {
     margin-left: 215px;
-    width: 800px;
-    border: 1px solid #ddd;
+    width: 785px;
 }
 
 ul.gnb,
@@ -82,15 +81,116 @@ ul.lnb>li:hover>a {
 
 .hero {
     height: 350px;
+    position: relative;
+}
+
+.hero img {
+    position: absolute;
+}
+
+.act01 {
+    z-index: 2;
+}
+
+.act02 {
+    z-index: 1;
 }
 
 .main {
     height: 200px;
     display: flex;
+    border-right: 1px solid #d4d4d4;
 }
 
-footer {
-    height: 100px;
+.main>div {
+    width: 30%;
+}
+
+.main div.notice {
+    width: 40%;
+    padding: 10px;
+}
+
+.tab-nav {
+    padding-top: 5px;
+    padding-left: 15px;
+    display: flex;
+}
+
+.tab-nav a {
+    background: #ccc;
+    color: #999;
+    padding: 5px 15px;
+}
+
+.tab-nav a.active {
+    background: #eee;
+    color: #000;
+}
+
+.tab-content {
+    background: #eee;
+    padding: 10px;
+    height: 140px;
+}
+
+.tab-content>div {
+    display: none;
+}
+
+.tab-content>div.act {
+    display: block;
+}
+
+.notice-ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.notice-ul li {
+    border-bottom: 1px dashed #999;
+}
+
+.notice-ul li:last-child {
+    border: none;
+}
+
+.notice-ul a {
+    display: inline-block;
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px 0;
+    font-size: 15px;
+}
+
+.notice-ul li:hover {
+    background: #ddd;
+}
+
+.notice-ul span {
+    float: right;
+    font-size: 15px;
+}
+
+#gallery {
+    height: 100%;
+}
+
+#gallery img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.banner img {
+    max-width: 100%;
+    margin-top: 5px;
 }
 
 .quick {
@@ -106,17 +206,99 @@ footer {
     width: 40px;
     height: 40px;
     margin: 10px;
-    background-image: url("");
+    background-image: url("../images/quick.png");
     background-repeat: no-repeat;
 }
 
-.band{
-
+.band {
+    background-position: -65px 0;
 }
 
-.facebook{
-
+.youtube {
+    background-position: -65px -50px;
 }
-.instagram{
 
+.twitter {
+    background-position: 0px -50px;
+}
+
+.instagram {
+    background-position: -195px 0px;
+}
+
+.linkdin {
+    background-position: -195px -50px;
+}
+
+.snapchat {
+    background-position: -125px -100px;
+}
+
+.pinter {
+    background-position: 0px -100px;
+}
+
+.kakao {
+    background-position: -195px -100px;
+}
+
+footer {
+    height: 100px;
+    background: #d4d4d4;
+    display: flex;
+}
+
+.footer-box {
+    width: 100%;
+}
+
+footer img {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.footer-nav {
+    height: 50px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav a {
+    margin-left: 30px;
+    padding: 5px 10px;
+}
+
+.footer-nav a:hover {
+    background: #999;
+    color: #fff;
+}
+
+.copy {
+    text-align: center;
+    line-height: 20px;
+}
+
+.popup {
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    border: 1px solid #ddd;
+    z-index: 100;
+    top: 150px;
+    left: 250px;
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
 }
