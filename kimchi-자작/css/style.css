@@ -1,0 +1,319 @@
+/* 배경색 : #ffffff
+    텍스트 : #333333
+    주조색 보조색 자율
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #333333;
+    background: #ffffff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border: 1px solid #333333;
+    flex-direction: column;
+}
+
+.top {
+    height: 100%;
+    display: flex;
+}
+
+/* header */
+
+header {
+    width: 200px;
+    max-height: 100%;
+    height: 120px;
+}
+
+.logo img {
+    width: 200px;
+    height: 80px;
+}
+
+.gnb li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.gnb>li>a {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.gnb>li {
+    transition: all 300ms;
+    border-bottom: 1px dashed #fff;
+}
+
+.gnb>li:hover {
+    background: #dddddd;
+}
+
+.gnb>li:hover a {
+    color: #fff;
+}
+
+.lnb {
+    display: none;
+}
+
+.lnb>li>a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 8px;
+}
+
+.lnb>li {
+    transition: all 300ms;
+}
+
+.lnb>li:hover {
+    background: #dddddd;
+}
+
+.lnb>li:hover>a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.gnb>a {
+    font-size: 10px;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+
+.gnb>span {
+    background: #333333;
+    height: 8px;
+    width: 2px;
+    display: inline-block;
+}
+
+/* contents */
+
+.contents {
+    width: 400px;
+    max-height: 100%;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents-header {
+    border-bottom: 1px dotted #333333;
+    padding: 20px 10px;
+    height: 20%;
+    cursor: pointer;
+}
+
+.contents-header img {
+    width: 80px;
+    height: 60px;
+    float: left;
+    margin-right: 20px;
+}
+
+.contents-header-text {
+    position: relative;
+}
+
+.contents-header-text h1 {
+    font-size: 14px;
+}
+
+.contents-header-text p {
+    font-size: 10px;
+}
+
+.contents-header-text i {
+    position: absolute;
+    font-size: 40px;
+    top: 0;
+    right: 40px;
+}
+
+.notice,
+.gallery {
+    padding: 20px 10px;
+    border-bottom: 1px dotted #333333;
+    height: 40%;
+}
+
+.notice li>h1,
+.gallery li>h1 {
+    display: inline;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #333333;
+    border-bottom: 3px solid #ffffff;
+}
+
+.notice li,
+.gallery ul>li {
+    border-bottom: 1px solid #333333;
+    padding: 5px 0;
+}
+
+.notice a {
+    text-decoration: none;
+    color: #333333;
+    display: inline-block;
+}
+
+.notice span {
+    float: right;
+}
+
+.gallery-box {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-box p {
+    text-align: center;
+}
+
+.gallery img {
+    width: 160px;
+    height: 120px;
+    border: 1px solid #333333;
+}
+
+.small-gallery {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.small-gallerys {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.small-gallerys img {
+    width: 80px;
+    height: 60px;
+}
+
+/* slide */
+
+.slide {
+    width: 400px;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-box {
+    width: 1200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slide-box img {
+    float: left;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #333333;
+}
+
+.footer-logo {
+    width: 200px;
+    height: 120px;
+    border-right: 1px dotted #333333;
+}
+
+.footer-logo img {
+    width: 199px;
+    height: 119px;
+    filter: grayscale(1);
+}
+
+.copyright {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu {
+    border-bottom: 1px dotted #333333;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.footer-menu span {
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #333333;
+    height: 30px;
+    width: 2px;
+}
+
+.footer-copy {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.footer-copy p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* popup */
+
+.popup {
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    border: 1px solid #ddd;
+    z-index: 100;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+}
