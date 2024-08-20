@@ -58,6 +58,22 @@ header {
     width: calc(100% - 600px);
     height: 100%;
     background: aqua;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-in {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+
+}
+
+.hero-in img {
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    object-fit: cover;
 }
 
 /* aside */
@@ -65,7 +81,6 @@ aside {
     width: 400px;
     height: 100%;
     background: yellowgreen;
-    padding: 20px;
 }
 
 .banner {
